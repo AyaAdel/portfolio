@@ -1,0 +1,219 @@
+// media Query
+
+@media screen and (max-width: 1170px) {
+  .menu-btn,
+  .scroll-top a {
+    right: 1.5rem;
+  }
+
+  main {
+    padding: 3rem;
+  }
+
+  #work .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #about {
+    .about-info {
+      grid-template-areas:
+        "portrait portrait"
+        "bio bio"
+        "job-1 job-2"
+        "job-3 .";
+      grid-template-columns: repeat(2, 1fr);
+
+      .bio {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .project-file {
+    grid-gap: 30px;
+  }
+
+  .project-file .project-data {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  h1.lg-heading {
+    font-size: 4rem;
+  }
+
+  .sm-heading {
+    font-size: 1.8rem;
+  }
+
+  div.menu-branding,
+  ul.menu-nav {
+    width: 100%;
+    float: none;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  div.menu-branding {
+    max-height: 30vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  ul.menu-nav {
+    max-height: 70vh;
+    transform: translate3d(-100%, 0, 0);
+
+    .nav-item .nav-link {
+      font-size: 25px;
+    }
+  }
+
+  #work .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .scroll-top a {
+    visibility: hidden;
+  }
+
+  #contact .contact-info {
+    justify-content: center;
+
+    div {
+      margin-bottom: 0;
+      width: 90%;
+
+      & + div {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .project-file {
+    grid-gap: 20px;
+  }
+
+  .project-file .project-data {
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  #about .about-info .job {
+    padding: 20px;
+  }
+
+  div.menu-branding,
+  ul.menu-nav {
+    max-height: 50vh;
+
+    .portrait {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  ul.menu-nav .nav-item .nav-link {
+    font-size: 20px;
+  }
+
+  .project-file {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  #about .about-info {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  main h1 {
+    padding-top: 5vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about .about-info {
+    grid-template-areas:
+      "portrait"
+      "bio"
+      "job-1"
+      "job-2"
+      "job-3";
+    grid-template-columns: 1fr;
+
+    .job {
+      padding: 15px;
+    }
+
+    .portrait img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  #work .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  main h1 {
+    padding-top: 20vh;
+  }
+
+  div.menu-branding {
+    max-height: 30vh;
+  }
+
+  ul.menu-nav {
+    max-height: 70vh;
+
+    .nav-item .nav-link {
+      font-size: 25px;
+    }
+  }
+
+  #contact .contact-info {
+    font-size: 16px;
+  }
+
+  #contact .contact-info div {
+    padding: 15px 10px;
+  }
+
+  .project-heading h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main {
+    padding: 1rem;
+  }
+
+  div.menu-branding {
+    max-height: 40vh;
+  }
+
+  ul.menu-nav {
+    max-height: 60vh;
+  }
+}

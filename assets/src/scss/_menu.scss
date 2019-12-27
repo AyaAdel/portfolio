@@ -1,0 +1,117 @@
+.menu-btn {
+  position: absolute;
+  top: 3.5rem;
+  right: 3.5rem;
+  z-index: 3;
+  cursor: pointer;
+  @include transition;
+
+  .btn-line {
+    width: 3rem;
+    height: 0.3rem;
+    margin-bottom: 0.5rem;
+    background-color: text-color($primary-color);
+    @include transition;
+  }
+
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
+
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-branding,
+  &-nav {
+    width: 50%;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background-color: darken($primary-color, 10);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    @include transition;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .nav-item {
+      margin-bottom: 10px;
+      transform: translate3d(600px, 0, 0);
+      @include transition;
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+
+      .nav-link {
+        color: text-color($primary-color);
+        font-size: 30px;
+        text-transform: uppercase;
+
+        &.active,
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  &-branding {
+    background-color: darken($primary-color, 5);
+    transform: translate3d(0, 100%, 0);
+    @include transition;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background-image: url("../imgs/photo.jpg");
+      background-size: cover;
+      border: 3px solid $secondary-color;
+      border-radius: 50%;
+    }
+  }
+}
+
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}

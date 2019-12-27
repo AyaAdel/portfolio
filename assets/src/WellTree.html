@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('./partials/head.html')
+    <title>Well Tree | My Work</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link active">My work</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">How To Reach Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    @@include('./partials/scroll-top.html')
+    <main id="work">
+      <h1 class="lg-heading">
+        <a href="work.html">My <span class="text-secondary">Work</span></a>
+      </h1>
+      <h2 class="sm-heading">Check Out Some Of My Projects...</h2>
+      <div class="project-heading">
+        <h2>Well Tree</h2>
+        <div class="direction-arrows">
+          <a href="./zak.html"><i class="fas fa-chevron-left"></i></a>
+          <a href="./family.html"><i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="project-file">
+        <div class="project-photo">
+          <img src="./imgs/welltree.png" alt="Well Tree" />
+        </div>
+        <div class="project-data">
+          <div class="project-about">
+            <h2>About</h2>
+            <p>
+              WellTree is dedicated to manifesting optimal well-being for
+              humanity and planet Earth. We do this by inspiring a free online
+              community, where health-conscious friends and holistic
+              practitioners connect and share natural healing wisdom with the
+              world. Together, we grow wellness
+            </p>
+          </div>
+          <div class="project-tools">
+            <h2>Tools Used</h2>
+            <ul class="tools-icons">
+              <li class="tools-icons-wrapper">
+                <img src="./imgs/html5.png" alt="html5" />
+              </li>
+              <li class="tools-icons-wrapper">
+                <img src="./imgs/css3.png" alt="css3" />
+              </li>
+              <li class="tools-icons-wrapper">
+                <img src="./imgs/javascript.png" alt="javascript" />
+              </li>
+              <li class="tools-icons-wrapper">
+                <img src="./imgs/bootstrap.png" alt="bootstrap" />
+              </li>
+              <li class="tools-icons-wrapper">
+                <img src="./imgs/gulp.png" alt="gulp" />
+              </li>
+              <li class="tools-icons-wrapper">
+                <img src="./imgs/git.png" alt="git" />
+              </li>
+              <li class="tools-icons-wrapper">
+                <img src="./imgs/wordpress.png" alt="wordpress" />
+              </li>
+            </ul>
+          </div>
+          <div class="project-website">
+            <h2>Website</h2>
+            <i class="far fa-eye"></i>
+            <a href="http://welltree.org/" target="_blank">View Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="direction-btn">
+        <a href="./zak.html" class="prev"
+          ><i class="fas fa-angle-left"></i> Prev</a
+        >
+        <a href="./family.html" class="next"
+          ><i class="fas fa-angle-right"></i> Next</a
+        >
+      </div>
+    </main>
+    @@include('./partials/footer.html')
+
+    <script src="scripts/scripts.min.js"></script>
+  </body>
+</html>

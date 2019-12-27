@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('./partials/head.html')
+  <title>About Me</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link active">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link">My work</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">How To Reach Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  @@include('./partials/scroll-top.html')
+  <main id="about">
+    <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
+    <h2 class="sm-heading">Let Me Tell You A Few Things...</h2>
+    <div class="about-info">
+      <div class="portrait">
+        <img src="imgs/photo.jpg" alt="Mohamed Ramadan" />
+      </div>
+      <div class="bio">
+        <h2 class="text-secondary">BIO</h2>
+        <p>
+          Hello, my name is Aya Adel and I am a Front End Developer. I
+          specialize in making web applications and modern responsive website.
+          I fell in love with Front End Development and have a passion for
+          learning new technologies and creating beautiful websites
+        </p>
+        <p>
+          I have always been fascinated by web technologies and also enjoy
+          turning simple things into more interactive. If you are interested
+          in developing with web technologies I would love to work with you on
+          it. I am available for hire as a part-time or contract basis
+        </p>
+        <p>
+          I’m Mostly build Front End part of websites. If You need awesome
+          website, you have landed on the right page
+        </p>
+      </div>
+      <div class="job job-1">
+        <div class="file-code"><i class="fas fa-file-code"></i></div>
+        <h3>Code</h3>
+        <p>
+          I enjoy hand coding things from scratch using clean, simple and
+          maintainable code that is easy to read
+        </p>
+      </div>
+      <div class="job job-2">
+        <div class="file-code"><i class="fas fa-palette"></i></div>
+        <h3>Design</h3>
+        <p>
+          I focus on crafting beautifully designed websites, and as with my
+          code, I value simple and clean design patterns
+        </p>
+      </div>
+      <div class="job job-3">
+        <div class="file-code"><i class="fas fa-tablet-alt"></i></div>
+        <h3>Responsive</h3>
+        <p>
+          My projects will work on any device, no matter the size of the
+          screen
+        </p>
+      </div>
+    </div>
+  </main>
+  @@include('./partials/footer.html')
+
+  <script src="scripts/scripts.min.js"></script>
+</body>
+
+</html>

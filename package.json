@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Responsive Portofolio Website",
+  "main": "gulpfile.js",
+  "homepage": "https://ayaadel.github.io/my-portfolio",
+  "scripts": {
+    "deploy": "gh-pages -d assets/dist"
+  },
+  "author": "Aya Adel",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-image": "^4.4.1",
+    "gulp-livereload": "^4.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^1.0.4"
+  },
+  "dependencies": {
+    "cache": "^2.1.0",
+    "clean": "^4.0.2",
+    "clean-cache": "^1.0.2",
+    "gh-pages": "^2.0.1",
+    "gulp-file-include": "^2.1.0"
+  }
+}
